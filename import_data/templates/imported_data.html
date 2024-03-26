@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imported Data</title>
+</head>
+<body>
+    <h1>Imported Data</h1>
+    <ul>
+        {% for item in imported_data %}
+            <li>{{ item.busy_po_no }} - {{ item.party_name }} - {{ item.product_name }} - {{ item.qty_main }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
